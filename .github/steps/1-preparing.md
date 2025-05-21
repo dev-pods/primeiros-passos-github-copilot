@@ -1,6 +1,6 @@
 ## Etapa 1: Oi Copilot
 
-O GitHub Copilot comprovadamente aumenta a produtividade do desenvolvedor e acelera o ritmo do desenvolvimento de software. Para mais informações, veja [Pesquisa: quantificando o impacto do GitHub Copilot na produtividade e felicidade do desenvolvedor no blog do GitHub.](https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness/) Copilot
+O GitHub Copilot comprovadamente aumenta a produtividade do desenvolvedor e acelera o ritmo do desenvolvimento de software. Para mais informações, veja [Pesquisa: quantificando o impacto do GitHub Copilot na produtividade e felicidade do desenvolvedor no blog do GitHub.](https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness/)
 
 Bem-vindo ao seu exercício de **"Primeiros Passos com o GitHub Copilot"**! :robot:
 
@@ -18,21 +18,28 @@ GitHub Copilot has been proven to increase developer productivity and accelerate
 
 Suas interações mais comuns provavelmente serão:
 
-- **Sugestões em linha**: Enquanto você digita, o Copilot usa o contexto próximo para sugerir código diretamente no seu editor. Esta será uma interação familiar se você já usou ferramentas de completação de código como o [Intellisense](https://code.visualstudio.com/docs/editor/intellisense), exceto que as completações podem ser funções inteiras.
-- **Copilot - Modo Pergunta**: Um painel de chat dedicado que permite fazer perguntas relacionadas à codificação. Isso parecerá familiar se você já usou chats de assistentes de IA online. A grande diferença, no entanto, é que seus arquivos de projeto fornecerão contexto automático para fornecer respostas personalizadas.
-- **Copilot - Modo Edição**: Similar ao modo Pergunta, mas menos conversacional. O Copilot fará alterações nos seus arquivos selecionados para implementar sua solicitação.
-- **Copilot - Modo Agente**: O Copilot será executado iterativamente até atingir sua solicitação. Ele selecionará contexto, fará alterações no código, executará comandos de terminal, ferramentas e, o mais importante, revisará seu trabalho para fazer ajustes.
+- **Sugestões em linha**: Enquanto você digita, o Copilot usa o contexto próximo para sugerir código diretamente no seu editor. Esta será uma interação familiar se você já usou ferramentas de sugestão de código como o [Intellisense](https://code.visualstudio.com/docs/editor/intellisense), exceto que as completações podem ser funções inteiras.
+
+- **Copilot - Modo Pergunta (Ask)**: Um painel de chat dedicado que permite fazer perguntas relacionadas à codificação. Isso parecerá familiar se você já usou chats de assistentes de IA online. A grande diferença, no entanto, é que seus arquivos de projeto fornecerão contexto automático para fornecer respostas personalizadas.
+
+- **Copilot - Modo Edição(Edit)**: Similar ao modo Pergunta, mas menos conversacional. O Copilot fará alterações nos seus arquivos selecionados para implementar sua solicitação.
+
+- **Copilot - Modo Agente(Agent)**: O Copilot será executado iterativamente até atingir sua solicitação. Ele selecionará contexto, fará alterações no código, executará comandos de terminal, ferramentas e, o mais importante, revisará seu trabalho para fazer ajustes.
 
 > [!DICA]
 > Você pode aprender mais sobre recursos atuais e futuros na documentação de [Recursos do GitHub Copilot](https://docs.github.com/en/copilot/about-github-copilot/github-copilot-features). Você também pode selecionar diferentes [modelos](https://docs.github.com/en/github-models) e criar suas próprias [extensões](https://github.com/features/copilot/extensions), mas isso é assunto para outra lição!
 
 ### Como posso usar o GitHub Copilot?
 
-Ao trabalhar, você descobrirá que o GitHub Copilot pode ajudar em vários lugares no site e em seus ambientes de codificação favoritos, como VS Code, Jet Brains e Xcode! Para a codificação de hoje, porém, praticaremos com o VS Code em um ambiente de desenvolvimento pré-configurado conhecido como [Codespace](https://github.com/features/codespaces).
+Ao trabalhar, você descobrirá que o GitHub Copilot pode ajudar em vários lugares no site do GitHub e em suas IDEs de codificação favoritas, como VS Code, Visual Studio,Jet Brains e Xcode! 
 
-### :keyboard: Atividade: Obtenha uma introdução ao projeto do Copilot Chat
+### :keyboard: Atividade: Configurando o ambiente
+Para a codificação de hoje, porém,  precisaremos de escolher como executar nossa aplicação.
 
-Vamos iniciar nosso ambiente de desenvolvimento, usar o Copilot para aprender um pouco sobre o projeto e depois testá-lo.
+<details>
+<summary>Configurando o Codespaces</summary><br/>
+
+Vamos iniciar nosso ambiente de desenvolvimento pré-configurado conhecido como [Codespace](https://github.com/features/codespaces), usar o Copilot para aprender um pouco sobre o projeto e depois testá-lo.
 
 1. Clique com o botão esquerdo no botão abaixo para abrir a página **Criar Codespace** em uma nova aba. Use a configuração padrão.
 
@@ -44,6 +51,25 @@ Vamos iniciar nosso ambiente de desenvolvimento, usar o Copilot para aprender um
    - ❌ Original: `/dev-pods/primeiros-passos-github-copilot`
 
 1. Aguarde um momento para que o Visual Studio Code carregue no seu navegador.
+
+</details>
+
+<details>
+<summary>Configurando o ambiente local</summary><br/>
+Para configurar o ambiente local, vamos precisar de instalar e configurar alguns pré requisitos:
+
+- [Python 3](https://www.python.org/downloads/)
+- [VSCODE](https://code.visualstudio.com/)
+   - Com as seguintes extensões:
+      - GitHub.copilot
+      - ms-python.python
+      - ms-python.debugpy
+
+
+</details>
+
+
+### :keyboard: Atividade: Obtenha uma introdução ao projeto do Copilot Chat
 
 1. Na barra lateral esquerda, clique na aba de extensões e verifique se as extensões `GitHub Copilot` e `Python` estão instaladas e ativadas.
 
@@ -115,8 +141,7 @@ Vamos iniciar nosso ambiente de desenvolvimento, usar o Copilot para aprender um
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
    > ```prompt
-   > Incrível! Obrigado, Copilot! Vamos usar o
-   > nome de branch "accelerate-with-copilot".
+   > Incrível! Obrigado, Copilot! Vamos usar o nome de branch "accelerate-with-copilot".
    > ```
 
    > **Dica:** Se o Copilot não lhe der exatamente o que você deseja, você sempre pode continuar explicando o que precisa. O Copilot lembrará do histórico da conversa para respostas de acompanhamento.
