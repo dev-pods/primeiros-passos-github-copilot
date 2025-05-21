@@ -18,7 +18,7 @@ Resumidamente, você pode pensar no Copilot como um colega de trabalho muito esp
 
 - **Como faço prompts?:** Ser explícito e claro ajuda o Copilot a fazer o melhor trabalho. Mas, diferente de sistemas tradicionais, você sempre pode esclarecer sua instrução com prompts de acompanhamento.
 
-> [!DICA]
+> [!TIP]
 > Existem várias outras formas de complementar o conhecimento e as capacidades do Copilot, como [participantes de chat](https://docs.github.com/en/copilot/using-github-copilot/copilot-chat/github-copilot-chat-cheat-sheet?tool=vscode#chat-participants), [variáveis de chat](https://docs.github.com/en/copilot/using-github-copilot/copilot-chat/github-copilot-chat-cheat-sheet?tool=vscode#chat-variables), [comandos de barra](https://docs.github.com/en/copilot/using-github-copilot/copilot-chat/github-copilot-chat-cheat-sheet?tool=vscode#slash-commands-1) e [ferramentas MCP](https://code.visualstudio.com/docs/copilot/chat/mcp-servers).
 
 ### :keyboard: Atividade: Use o Copilot para corrigir o bug de inscrição :bug:

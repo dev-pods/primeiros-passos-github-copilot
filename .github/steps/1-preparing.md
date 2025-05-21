@@ -1,7 +1,5 @@
 ## Etapa 1: Oi Copilot
 
-O GitHub Copilot comprovadamente aumenta a produtividade do desenvolvedor e acelera o ritmo do desenvolvimento de software. Para mais informações, veja [Pesquisa: quantificando o impacto do GitHub Copilot na produtividade e felicidade do desenvolvedor no blog do GitHub.](https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness/)
-
 Bem-vindo ao seu exercício de **"Primeiros Passos com o GitHub Copilot"**! :robot:
 
 Neste exercício, você usará diferentes recursos do GitHub Copilot para trabalhar em um site que permite aos alunos da Escola Mergington High se inscreverem em atividades extracurriculares. 🎻 ⚽️ ♟️
@@ -14,7 +12,8 @@ Neste exercício, você usará diferentes recursos do GitHub Copilot para trabal
 
 O GitHub Copilot é um assistente de codificação com IA que ajuda você a escrever código mais rápido e com menos esforço, permitindo que você concentre mais energia na resolução de problemas e na colaboração.
 
-GitHub Copilot has been proven to increase developer productivity and accelerate the pace of software development. For more information, see [Research: quantifying GitHub Copilot’s impact on developer productivity and happiness in the GitHub blog.](https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness/)
+O GitHub Copilot comprovadamente aumenta a produtividade do desenvolvedor e acelera o ritmo do desenvolvimento de software. Para mais informações, veja [Pesquisa: quantificando o impacto do GitHub Copilot na produtividade e felicidade do desenvolvedor no blog do GitHub.](https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness/)
+
 
 Suas interações mais comuns provavelmente serão:
 
@@ -26,7 +25,7 @@ Suas interações mais comuns provavelmente serão:
 
 - **Copilot - Modo Agente(Agent)**: O Copilot será executado iterativamente até atingir sua solicitação. Ele selecionará contexto, fará alterações no código, executará comandos de terminal, ferramentas e, o mais importante, revisará seu trabalho para fazer ajustes.
 
-> [!DICA]
+> [!TIP]
 > Você pode aprender mais sobre recursos atuais e futuros na documentação de [Recursos do GitHub Copilot](https://docs.github.com/en/copilot/about-github-copilot/github-copilot-features). Você também pode selecionar diferentes [modelos](https://docs.github.com/en/github-models) e criar suas próprias [extensões](https://github.com/features/copilot/extensions), mas isso é assunto para outra lição!
 
 ### Como posso usar o GitHub Copilot?

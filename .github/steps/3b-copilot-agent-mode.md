@@ -52,7 +52,7 @@ Vamos experimentar solicitações mais abertas que vão adicionar mais funcional
 
 Só por diversão, vamos tentar algo ainda mais difícil e aberto para ver o que acontece!
 
-> [!DICA]
+> [!TIP]
 > Em nossos testes, conseguimos resultados funcionais na maioria das vezes, mas nem sempre.
 > Você pode tentar outros modelos ou pausar para fornecer feedback ao Copilot.
 
