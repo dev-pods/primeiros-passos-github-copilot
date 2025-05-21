@@ -1,88 +1,87 @@
-### :keyboard: Bonus Activity - GitHub Copilot Agent Mode
+### :keyboard: Atividade Bônus - Modo Agente do GitHub Copilot
 
-> [!NOTE]
-> This activity is optional and not graded.
+> [!NOTA]
+> Esta atividade é opcional e não é avaliada.
 
-### What is "Agent" Mode?
+### O que é o modo "Agente"?
 
-**Agent** mode enhances Copilot by automatically providing it feedback, typically the types of feedback you would provide after reviewing Copilot's suggested edits.
+O modo **Agente** aprimora o Copilot fornecendo feedback automaticamente, normalmente do tipo que você daria após revisar as edições sugeridas pelo Copilot.
 
-**Agent** mode gives Copilot a feedback loop, enabling it to inspect its own results for issues, bugs, inconsistency, etc. in the code and even the terminal! This allows it to automatically revise its work in many situations. Similarly this means **Agent** mode can
-typically handle more complex and multi-step tasks.
+O modo **Agente** dá ao Copilot um ciclo de feedback, permitindo que ele inspecione seus próprios resultados em busca de problemas, bugs, inconsistências, etc., tanto no código quanto no terminal! Isso permite que ele revise automaticamente seu trabalho em muitas situações. Da mesma forma, o modo **Agente** geralmente consegue lidar com tarefas mais complexas e de múltiplos passos.
 
-That's just a brief intro and there is much more to learn, but that's for a dedicated future exercise. (hint)
+Essa é apenas uma introdução breve e há muito mais para aprender, mas isso fica para um exercício futuro dedicado. (dica)
 
-Now, let's give **Agent** mode a try! 👩‍🚀
+Agora, vamos experimentar o modo **Agente**! 👩‍🚀
 
-### :keyboard: Activity: Use Agent mode to add functional "unregister" buttons
+### :keyboard: Atividade: Use o modo Agente para adicionar botões funcionais de "desinscrever"
 
-Let's experiment with some more open-ended requests that will add more functionality to our web application. Remember, AI assistants often produce different results, even if the same prompt is provided. If you don't get the desired results, you can try other models or provided followup feedback to refine the results.
+Vamos experimentar solicitações mais abertas que vão adicionar mais funcionalidades ao nosso aplicativo web. Lembre-se: assistentes de IA frequentemente produzem resultados diferentes, mesmo com o mesmo prompt. Se não conseguir o resultado desejado, tente outros modelos ou forneça feedback para refinar os resultados.
 
-1. Open the **Copilot** chat panel and use the dropdown menu to switch to **Agent** mode.
+1. Abra o painel de chat do **Copilot** e use o menu suspenso para trocar para o modo **Agente**.
 
    <img width="250" alt="image" src="https://github.com/user-attachments/assets/8c537e2a-d89a-4908-8d35-77c7f0830805" />
 
-1. Time for our test! Let's ask Copilot to add functionality for removing participants.
+1. Hora do teste! Peça ao Copilot para adicionar funcionalidade de remoção de participantes.
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
    > ```prompt
-   > #codebase Please add a delete icon next to each participant and hide the bullet points.
-   > When clicked, it will unregister that participant from the activity.
+   > #codebase Por favor, adicione um ícone de deletar ao lado de cada participante e oculte os marcadores.
+   > Ao clicar, deve desinscrever esse participante da atividade.
    > ```
 
-   - If you try this prompt in **Edit** mode, you will probably find that the changes to the frontend and backend were made in a theoretical way. Although no syntax or runtime errors occurred, the changes were not compatible and didn't achieve the goal.
-   - In **Agent** mode, Copilot reviewed its own work and refined it to ensure all changes were error free and coordinated together.
+   - Se você tentar esse prompt no modo **Edição**, provavelmente verá que as mudanças no frontend e backend foram feitas de forma teórica. Embora não ocorram erros de sintaxe ou execução, as mudanças podem não ser compatíveis e não atingir o objetivo.
+   - No modo **Agente**, o Copilot revisa seu próprio trabalho e refina para garantir que todas as mudanças estejam corretas e coordenadas.
 
-1. When Copilot is finished, restart the debugger and inspect the results. If you like the results, press the **Keep** button. If not, try providing Copilot some feedback to refined the results.
+1. Quando o Copilot terminar, reinicie o depurador e inspecione os resultados. Se gostar, pressione o botão **Keep**. Caso contrário, forneça feedback ao Copilot para refinar os resultados.
 
-1. Ask Copilot to fix a registration bug.
+1. Peça ao Copilot para corrigir um bug de registro.
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
    > ```prompt
-   > #codebase I've noticed there seems to be a bug.
-   > When a participant is registered, the page must be refreshed to see the change on the activity.
+   > #codebase Notei que parece haver um bug.
+   > Quando um participante é registrado, a página precisa ser atualizada para mostrar a mudança na atividade.
    > ```
 
-   - If you try this prompt in **Edit** mode, it may or may not work.
+   - Se você tentar esse prompt no modo **Edição**, pode funcionar ou não.
 
-1. When Copilot is finished, inspect the results. If you like the results, press the **Keep** button. If not, try providing Copilot some feedback.
+1. Quando o Copilot terminar, inspecione os resultados. Se gostar, pressione o botão **Keep**. Caso contrário, forneça feedback ao Copilot.
 
-### :keyboard: Activity: Use Agent mode to change the database! 🧑‍🚀
+### :keyboard: Atividade: Use o modo Agente para trocar o banco de dados! 🧑‍🚀
 
-Just for fun, let's try something even more difficult and open-ended to see what happens!
+Só por diversão, vamos tentar algo ainda mais difícil e aberto para ver o que acontece!
 
-> [!TIP]
-> In our experiments, we got working results most of the time, but not every time.
-> You might try other models or pausing to provide Copilot feedback.
+> [!DICA]
+> Em nossos testes, conseguimos resultados funcionais na maioria das vezes, mas nem sempre.
+> Você pode tentar outros modelos ou pausar para fornecer feedback ao Copilot.
 
-1. (optional) If it is available for you, you might try another model such as `Claude 3.5 Sonnet`.
+1. (opcional) Se estiver disponível para você, experimente outro modelo como `Claude 3.5 Sonnet`.
 
    <img width="250" alt="image" src="https://github.com/user-attachments/assets/16125b88-8428-4f62-9c1b-5761e26ed888" />
 
-1. Ask Copilot to install a local database service.
+1. Peça ao Copilot para instalar um serviço de banco de dados local.
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
    > ```prompt
-   > Please install a local mongodb server for development reasons.
-   > Afterward, run a command that lists the collections to verify the service is active and working.
-   > Do not modify our program yet.
+   > Por favor, instale um servidor mongodb local para desenvolvimento.
+   > Depois, execute um comando que liste as coleções para verificar se o serviço está ativo e funcionando.
+   > Não modifique nosso programa ainda.
    > ```
 
-   - We purposely made the default development environment not ready for installing a local MongoDB server.
-   - You will see Copilot make mistakes, analyze the error messages, and ask to run various extra commands to make the environment suitable. Nice!
+   - O ambiente de desenvolvimento padrão foi propositalmente configurado para não estar pronto para instalar um MongoDB local.
+   - Você verá o Copilot cometer erros, analisar mensagens de erro e pedir para rodar comandos extras para ajustar o ambiente. Legal!
 
-1. Ask Copilot to change our app to use the database service. 🤯
+1. Peça ao Copilot para alterar nosso app para usar o serviço de banco de dados. 🤯
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
    > ```prompt
-   > #codebase I don't like that we are storing the data in memory.
-   > Let's switch to using mongodb.
-   > For now use the local development instance.
-   > Please pre-populate the database with the existing hardcoded json activities, keeping the activity name as the key.
+   > #codebase Não gosto de armazenar os dados em memória.
+   > Vamos trocar para usar mongodb.
+   > Por enquanto, use a instância local de desenvolvimento.
+   > Por favor, preencha o banco de dados com as atividades json já existentes, mantendo o nome da atividade como chave.
    > ```
 
-1. That's your preview for now. We hope it was fun and please check back soon on the [Skills page](https://skills.github.com) for a dedicated exercise to explore even more of Agent Mode! 🧑‍🚀 🚀
+1. Esse é só um preview por enquanto. Esperamos que tenha se divertido e volte em breve na [página de Skills](https://skills.github.com) para um exercício dedicado a explorar ainda mais o modo Agente! 🧑‍🚀 🚀

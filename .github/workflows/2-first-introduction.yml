@@ -67,7 +67,7 @@ jobs:
             step_number: 2
             passed: ${{ !contains(steps.*.outcome, 'failure') }}
             results_table:
-              - description: "New activities added to src/app.py. We found ${{ steps.check-additional-activities.outputs.occurrences }} activities (minimum 4 required)"
+              - description: "Novas atividades adicionadas ao src/app.py. Encontramos ${{ steps.check-additional-activities.outputs.occurrences }} atividades (mínimo de 4 necessárias)"
                 passed: ${{ steps.check-additional-activities.outcome == 'success' }}
 
       - name: Create comment - step results

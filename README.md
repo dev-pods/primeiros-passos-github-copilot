@@ -1,47 +1,47 @@
-# Getting Started with GitHub Copilot
+# Primeiros Passos com o GitHub Copilot
 
-_Get started using GitHub Copilot in less than an hour._
+_Comece a usar o GitHub Copilot em menos de uma hora._
 
-## Welcome
+## Boas-vindas
 
-- **Who is this for**: Developers at any experience level looking to accelerate their code workflow.
-- **What you'll learn**: The different ways to interact with Copilot to explain, write, debug, and develop code.
-- **What you'll build**: You will guide Copilot to update Mergington High School's extracurricular activities website.
-- **Prerequisites**:
-  - Skills exercise: [Introduction to GitHub](https://github.com/skills/introduction-to-github)
-  - Familiarity with [VS Code](https://code.visualstudio.com/)
-  - Basic coding principles
-- **How long**: This exercise takes less than one hour to complete.
+- **Para quem é isto**: Desenvolvedores de qualquer nível de experiência que desejam acelerar seu fluxo de trabalho de código.
+- **O que você vai aprender**: As diferentes formas de interagir com o Copilot para explicar, escrever, depurar e desenvolver código.
+- **O que você vai construir**: Você vai orientar o Copilot para atualizar o site de atividades extracurriculares da Escola Mergington High.
+- **Pré-requisitos**:
+  - Exercício de habilidades: [Introdução ao GitHub](https://github.com/skills/introduction-to-github)
+  - Familiaridade com [VS Code](https://code.visualstudio.com/)
+  - Princípios básicos de programação
+- **Quanto tempo leva**: Este exercício leva menos de uma hora para ser concluído.
 
-In this exercise, you will:
+Neste exercício, você irá:
 
-1. Use a preconfigured Codespace to run VS Code in your browser.
-1. Learn different interaction options to develop with GitHub Copilot.
-1. Use Copilot to summarize and review your pull request.
+1. Usar um Codespace pré-configurado para executar o VS Code no seu navegador.
+1. Aprender diferentes opções de interação para desenvolver com o GitHub Copilot.
+1. Usar o Copilot para resumir e revisar seu pull request.
 
-### How to start this exercise
+### Como iniciar este exercício
 
-Simply copy the exercise to your account, then give your favorite Octocat (Mona) **about 20 seconds** to prepare the first lesson, then **refresh the page**.
+Simplesmente copie o exercício para sua conta, depois dê ao seu Octocat favorito (Mona) **cerca de 20 segundos** para preparar a primeira lição, então **atualize a página**.
 
-[![](https://img.shields.io/badge/Copy%20Exercise-%E2%86%92-1f883d?style=for-the-badge&logo=github&labelColor=197935)](https://github.com/new?template_owner=skills&template_name=getting-started-with-github-copilot&owner=%40me&name=skills-getting-started-with-github-copilot&description=Exercise:+Get+started+using+GitHub+Copilot&visibility=public)
+[![](https://img.shields.io/badge/Copiar%20Exerc%C3%ADcio-%E2%86%92-1f883d?style=for-the-badge&logo=github&labelColor=197935)](https://github.com/new?template_owner=skills&template_name=getting-started-with-github-copilot&owner=%40me&name=skills-getting-started-with-github-copilot&description=Exercise:+Get+started+using+GitHub+Copilot&visibility=public)
 
 <details>
-<summary>Having trouble? 🤷</summary><br/>
+<summary>Tendo problemas? 🤷</summary><br/>
 
-When copying the exercise, we recommend the following settings:
+Ao copiar o exercício, recomendamos as seguintes configurações:
 
-- For owner, choose your personal account or an organization to host the repository.
+- Para proprietário, escolha sua conta pessoal ou uma organização para hospedar o repositório.
 
-- We recommend creating a public repository, since private repositories will use Actions minutes.
+- Recomendamos criar um repositório público, já que repositórios privados usarão minutos de Actions.
    
-If the exercise isn't ready in 20 seconds, please check the [Actions](../../actions) tab.
+Se o exercício não estiver pronto em 20 segundos, verifique a aba [Actions](../../actions).
 
-- Check to see if a job is running. Sometimes it simply takes a bit longer.
+- Verifique se há um trabalho em execução. Às vezes, simplesmente leva um pouco mais de tempo.
 
-- If the page shows a failed job, please submit an issue. Nice, you found a bug! 🐛
+- Se a página mostrar um trabalho com falha, envie uma issue. Legal, você encontrou um bug! 🐛
 
 </details>
 
 ---
 
-&copy; 2025 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
+&copy; 2025 GitHub &bull; [Código de Conduta](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [Licença MIT](https://gh.io/mit)

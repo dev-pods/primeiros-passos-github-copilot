@@ -1,173 +1,172 @@
-## Step 2: Getting work done with Copilot
+## Etapa 2: Realizando tarefas com o Copilot
 
-In the previous step, GitHub Copilot was able to help us onboard to the project. That alone is a huge time saver, but now let's get some work done!
+Na etapa anterior, o GitHub Copilot nos ajudou a conhecer o projeto. Só isso já economiza muito tempo, mas agora vamos colocar a mão na massa!
 
-We recently learned there is a bug where students are registering for the same activities twice. That simply isn't acceptable, so let's get it fixed!
+Recentemente, descobrimos que há um bug onde estudantes conseguem se inscrever duas vezes na mesma atividade. Isso não é aceitável, então vamos corrigir!
 
-Unfortunately, we were given little information to solve this problem. So, let's enlist Copilot to help find the problem area and get a potential solution made.
+Infelizmente, recebemos poucas informações para resolver esse problema. Então, vamos pedir ajuda ao Copilot para encontrar a área problemática e sugerir uma solução.
 
-But before we do that, let's learn a bit more about Copilot! 🧑‍🚀
+Mas antes, vamos aprender um pouco mais sobre o Copilot! 🧑‍🚀
 
-### How does Copilot work?
+### Como o Copilot funciona?
 
-In short, you can think of Copilot like a very specialized coworker. To be effective with them, you need to provide them background (context) and clear direction (prompts). Additionally, different people are better at different things because of their unique experiences (models).
+Resumidamente, você pode pensar no Copilot como um colega de trabalho muito especializado. Para ser eficaz, você precisa fornecer contexto (background) e instruções claras (prompts). Além disso, pessoas diferentes são melhores em coisas diferentes por causa de suas experiências únicas (modelos).
 
-- **How do we provide context?:** In our coding environment, Copilot will automatically consider nearby code and open tabs. If you are using chat, you can also explicitly refer to files.
+- **Como fornecemos contexto?:** No nosso ambiente de codificação, o Copilot considera automaticamente o código próximo e as abas abertas. Se você estiver usando o chat, também pode referenciar arquivos explicitamente.
 
-- **What model should we pick?:** For our exercise, it shouldn't matter too much. Experimenting with different models is part of the fun! That's another lesson! 🤖
+- **Qual modelo devemos escolher?:** Para este exercício, não faz muita diferença. Experimentar modelos diferentes faz parte da diversão! Isso é assunto para outra lição! 🤖
 
-- **How do I make prompts?:** Being explicit and clear helps Copilot do the best job. But unlike some traditional systems, you can always clarify your direction with followup prompts.
+- **Como faço prompts?:** Ser explícito e claro ajuda o Copilot a fazer o melhor trabalho. Mas, diferente de sistemas tradicionais, você sempre pode esclarecer sua instrução com prompts de acompanhamento.
 
-> [!TIP]
-> There several other ways to supplement Copilot's knowledge and capabilities like [chat participants](https://docs.github.com/en/copilot/using-github-copilot/copilot-chat/github-copilot-chat-cheat-sheet?tool=vscode#chat-participants), [chat variables](https://docs.github.com/en/copilot/using-github-copilot/copilot-chat/github-copilot-chat-cheat-sheet?tool=vscode#chat-variables), [slash commands](https://docs.github.com/en/copilot/using-github-copilot/copilot-chat/github-copilot-chat-cheat-sheet?tool=vscode#slash-commands-1), and [MCP tools](https://code.visualstudio.com/docs/copilot/chat/mcp-servers).
+> [!DICA]
+> Existem várias outras formas de complementar o conhecimento e as capacidades do Copilot, como [participantes de chat](https://docs.github.com/en/copilot/using-github-copilot/copilot-chat/github-copilot-chat-cheat-sheet?tool=vscode#chat-participants), [variáveis de chat](https://docs.github.com/en/copilot/using-github-copilot/copilot-chat/github-copilot-chat-cheat-sheet?tool=vscode#chat-variables), [comandos de barra](https://docs.github.com/en/copilot/using-github-copilot/copilot-chat/github-copilot-chat-cheat-sheet?tool=vscode#slash-commands-1) e [ferramentas MCP](https://code.visualstudio.com/docs/copilot/chat/mcp-servers).
 
-### :keyboard: Activity: Use Copilot to fix our registration bug :bug:
+### :keyboard: Atividade: Use o Copilot para corrigir o bug de inscrição :bug:
 
-1. Let's ask Copilot to suggest where our bug might be coming from. Open the **Copilot Chat** panel in **Ask mode** and ask the following.
+1. Vamos pedir ao Copilot para sugerir de onde pode estar vindo o bug. Abra o painel **Copilot Chat** no **modo Pergunta** e pergunte:
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
    > ```prompt
-   > @workspace Students are able to register twice for an activity.
-   > Where could this bug be coming from?
+   > @workspace Estudantes conseguem se inscrever duas vezes em uma atividade.
+   > De onde pode estar vindo esse bug?
    > ```
 
    <details>
-   <summary>What is @workspace?</summary>
+   <summary>O que é @workspace?</summary>
 
-   Great question! This is a specialized [chat participant](https://docs.github.com/en/copilot/using-github-copilot/copilot-chat/github-copilot-chat-cheat-sheet?tool=vscode#chat-participants) that will explore the project repository and try to include relevant additional context.
+   Ótima pergunta! Este é um [participante de chat](https://docs.github.com/en/copilot/using-github-copilot/copilot-chat/github-copilot-chat-cheat-sheet?tool=vscode#chat-participants) especializado que explora o repositório do projeto e tenta incluir contexto adicional relevante.
 
    </details>
 
-1. Now that we know the issue is in the `src/app.py` file and the `signup_for_activity` method, let's follow Copilot's recommendation and go fix it (semi-manually). We'll start with a comment and let Copilot finish the correction.
+1. Agora que sabemos que o problema está no arquivo `src/app.py` e no método `signup_for_activity`, vamos seguir a recomendação do Copilot e corrigir (semi-manualmente). Comece com um comentário e deixe o Copilot sugerir a correção.
 
-   1. In VS Code, select the file **Explorer tab** to show the project files and open the `src/app.py` file.
+   1. No VS Code, selecione a aba **Explorer** para mostrar os arquivos do projeto e abra o arquivo `src/app.py`.
 
-   1. Scroll near the bottom of the file and find the `signup_for_activity` method.
+   1. Role até perto do final do arquivo e encontre o método `signup_for_activity`.
 
-   1. Find the comment line that describes adding a student. Above this is where it seems logical to do our registration check.
+   1. Encontre a linha de comentário que descreve a adição de um estudante. Acima disso, é o local lógico para fazer a verificação de inscrição.
 
-   1. Enter the below comment and press enter to go to the next line. After a moment, temporary shadow text will appear with a suggestion from Copilot! Nice! :tada:
+   1. Digite o comentário abaixo e pressione enter para ir para a próxima linha. Após um momento, aparecerá um texto sombreado com uma sugestão do Copilot! Legal! :tada:
 
       ```python
-      # Validate student is not already signed up
+      # Validar se o estudante já está inscrito
       ```
 
-   1. Press `Tab` to accept Copilot's suggestion and convert the shadow text to code.
+   1. Pressione `Tab` para aceitar a sugestão do Copilot e transformar o texto sombreado em código.
 
-      > **Tip:** If you would like to see other suggestions, instead of pressing `Tab`, hover over the shadow text suggestion and a toolbar will appear. Use the arrows to select other suggestions or the three dots `...` and `Open Completions Panel` option to show all suggestions in a dedicated panel.
+      > **Dica:** Se quiser ver outras sugestões, em vez de pressionar `Tab`, passe o mouse sobre a sugestão e use as setas ou clique nos três pontos `...` e em `Open Completions Panel` para ver todas as sugestões em um painel dedicado.
 
    <details>
-   <summary>Example Results</summary><br/>
+   <summary>Exemplo de resultado</summary><br/>
 
-   Copilot is growing every day and may not always produce the same results. If you are unhappy with the suggestions, here is an example of a valid suggestion result we produced during the making of this exercise. You can use it to continue forward.
+   O Copilot está evoluindo a cada dia e pode não produzir sempre os mesmos resultados. Se não gostar das sugestões, aqui está um exemplo válido que produzimos durante a criação deste exercício. Você pode usá-lo para continuar:
 
    ```python
    @app.post("/activities/{activity_name}/signup")
    def signup_for_activity(activity_name: str, email: str):
-      """Sign up a student for an activity"""
-      # Validate activity exists
+      """Inscrever um estudante em uma atividade"""
+      # Validar se a atividade existe
       if activity_name not in activities:
          raise HTTPException(status_code=404, detail="Activity not found")
 
-      # Get the activity
+      # Obter a atividade
       activity = activities[activity_name]
 
-      # Validate student is not already signed up
+      # Validar se o estudante já está inscrito
       if email in activity["participants"]:
         raise HTTPException(status_code=400, detail="Student is already signed up")
 
-      # Add student
+      # Adicionar estudante
       activity["participants"].append(email)
       return {"message": f"Signed up {email} for {activity_name}"}
    ```
 
    </details>
 
-### :keyboard: Activity: Let Copilot generate sample data 📋
+### :keyboard: Atividade: Deixe o Copilot gerar dados de exemplo 📋
 
-In new project developments, it's often helpful to have some realistic looking fake data for testing. Copilot is excellent at this task, so let's add some more sample activities and introduce another way to interact with Copilot using **Inline Chat**
+Em novos projetos, é útil ter dados fictícios realistas para testes. O Copilot é excelente nisso, então vamos adicionar mais atividades de exemplo e apresentar outra forma de interagir com o Copilot usando o **Chat Inline**.
 
-**Inline Chat** and the **Copilot Chat** panel are very similar tools, but with slightly different automatic context. As such, while Copilot Chat is good at explaining about the project, inline chat might feel more natural for asking about a particular line or function.
+O **Chat Inline** e o painel **Copilot Chat** são ferramentas muito parecidas, mas com contexto automático um pouco diferente. Assim, enquanto o Copilot Chat é bom para explicar sobre o projeto, o chat inline pode ser mais natural para perguntar sobre uma linha ou função específica.
 
-1. If not already open, open the `src/app.py` file.
+1. Se ainda não estiver aberto, abra o arquivo `src/app.py`.
 
-1. Near the top (about line 23), find the `activities` variable, where our example extracurricular activities are configured.
+1. Perto do topo (por volta da linha 23), encontre a variável `activities`, onde estão configuradas as atividades extracurriculares de exemplo.
 
-1. Click on any of the related lines and bring up Copilot inline chat by using the keyboard command `Ctrl + I` (windows) or `Cmd + I` (mac).
+1. Clique em qualquer uma dessas linhas e abra o chat inline do Copilot usando o comando de teclado `Ctrl + I` (windows) ou `Cmd + I` (mac).
 
-   > **Tip:** Another way to bring up Copilot inline chat is: `right click` on any of the selected lines -> `Copilot` -> `Editor Inline Chat`.
+   > **Dica:** Outra forma de abrir o chat inline é: clique com o botão direito em uma das linhas selecionadas -> `Copilot` -> `Editor Inline Chat`.
 
-1. Enter the following prompt text and press enter or the **Send and Dispatch** button.
+1. Digite o seguinte prompt e pressione enter ou o botão **Send and Dispatch**.
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
    > ```prompt
-   > Add 2 more sports related activities, 2 more artistic
-   > activities, and 2 more intellectual activities.
+   > Adicione mais 2 atividades esportivas, 2 artísticas e 2 intelectuais.
    > ```
 
-1. After a moment, Copilot will directly start making changes to the code. The changes will be stylized differently to make any additions and removals easy to identify. Take a moment to inspect and then press the **Accept** button.
+1. Após um momento, o Copilot começará a fazer alterações diretamente no código. As mudanças terão um estilo diferente para facilitar a identificação. Analise e pressione **Accept** para aceitar.
 
    <details>
-   <summary>Example Results</summary><br/>
+   <summary>Exemplo de resultado</summary><br/>
 
-   Copilot is growing every day and may not always produce the same results. If you are unhappy with the suggestions, here is an example result we produced during the making of this exercise. You can use it to continue forward, if having trouble.
+   O Copilot está evoluindo a cada dia e pode não produzir sempre os mesmos resultados. Se não gostar das sugestões, aqui está um exemplo que produzimos durante a criação deste exercício. Use se tiver dificuldades.
 
    ```python
-   # In-memory activity database
+   # Banco de dados de atividades em memória
    activities = {
-      "Chess Club": {
-         "description": "Learn strategies and compete in chess tournaments",
-         "schedule": "Fridays, 3:30 PM - 5:00 PM",
+      "Clube de Xadrez": {
+         "description": "Aprenda estratégias e participe de torneios de xadrez",
+         "schedule": "Sextas, 15h30 - 17h",
          "max_participants": 12,
          "participants": ["michael@mergington.edu", "daniel@mergington.edu"]
       },
-      "Programming Class": {
-         "description": "Learn programming fundamentals and build software projects",
-         "schedule": "Tuesdays and Thursdays, 3:30 PM - 4:30 PM",
+      "Aula de Programação": {
+         "description": "Aprenda fundamentos de programação e desenvolva projetos de software",
+         "schedule": "Terças e quintas, 15h30 - 16h30",
          "max_participants": 20,
          "participants": ["emma@mergington.edu", "sophia@mergington.edu"]
       },
-      "Gym Class": {
-         "description": "Physical education and sports activities",
-         "schedule": "Mondays, Wednesdays, Fridays, 2:00 PM - 3:00 PM",
+      "Educação Física": {
+         "description": "Educação física e atividades esportivas",
+         "schedule": "Segundas, quartas e sextas, 14h - 15h",
          "max_participants": 30,
          "participants": ["john@mergington.edu", "olivia@mergington.edu"]
       },
-      "Basketball Team": {
-         "description": "Competitive basketball training and games",
-         "schedule": "Tuesdays and Thursdays, 4:00 PM - 6:00 PM",
+      "Time de Basquete": {
+         "description": "Treinamento competitivo de basquete e jogos",
+         "schedule": "Terças e quintas, 16h - 18h",
          "max_participants": 15,
          "participants": []
       },
-      "Swimming Club": {
-         "description": "Swimming training and water sports",
-         "schedule": "Mondays and Wednesdays, 3:30 PM - 5:00 PM",
+      "Clube de Natação": {
+         "description": "Treinamento de natação e esportes aquáticos",
+         "schedule": "Segundas e quartas, 15h30 - 17h",
          "max_participants": 20,
          "participants": []
       },
-      "Art Studio": {
-         "description": "Express creativity through painting and drawing",
-         "schedule": "Wednesdays, 3:30 PM - 5:00 PM",
+      "Estúdio de Arte": {
+         "description": "Expresse criatividade com pintura e desenho",
+         "schedule": "Quartas, 15h30 - 17h",
          "max_participants": 15,
          "participants": []
       },
-      "Drama Club": {
-         "description": "Theater arts and performance training",
-         "schedule": "Tuesdays, 4:00 PM - 6:00 PM",
+      "Clube de Teatro": {
+         "description": "Teatro e treinamento de performance",
+         "schedule": "Terças, 16h - 18h",
          "max_participants": 25,
          "participants": []
       },
-      "Debate Team": {
-         "description": "Learn public speaking and argumentation skills",
-         "schedule": "Thursdays, 3:30 PM - 5:00 PM",
+      "Equipe de Debate": {
+         "description": "Aprenda oratória e argumentação",
+         "schedule": "Quintas, 15h30 - 17h",
          "max_participants": 16,
          "participants": []
       },
-      "Science Club": {
-         "description": "Hands-on experiments and scientific exploration",
-         "schedule": "Fridays, 3:30 PM - 5:00 PM",
+      "Clube de Ciências": {
+         "description": "Experimentos práticos e exploração científica",
+         "schedule": "Sextas, 15h30 - 17h",
          "max_participants": 20,
          "participants": []
       }
@@ -176,33 +175,33 @@ In new project developments, it's often helpful to have some realistic looking f
 
    </details>
 
-### :keyboard: Activity: Use Copilot to describe our work 💬
+### :keyboard: Atividade: Use o Copilot para descrever nosso trabalho 💬
 
-Nice work fixing that bug and expanding the example activities! Now let's get our work committed and pushed to GitHub, again with the help of Copilot!
+Ótimo trabalho corrigindo o bug e expandindo as atividades de exemplo! Agora vamos commitar e enviar para o GitHub, novamente com a ajuda do Copilot!
 
-1. In the left sidebar, select the `Source Control` tab.
+1. Na barra lateral esquerda, selecione a aba `Source Control`.
 
-   > **Tip:** Opening a file from the source control area will show the differences to the original rather than simply opening it.
+   > **Dica:** Abrir um arquivo pela área de controle de versão mostra as diferenças para o original, em vez de apenas abrir o arquivo normalmente.
 
-1. Find the `app.py` file and press the `+` sign to collect your changes together in the staging area.
+1. Encontre o arquivo `app.py` e pressione o sinal de `+` para adicionar suas alterações à área de staging.
 
    ![image](https://github.com/user-attachments/assets/7d3daf4e-4125-4775-88a7-33251cd7293e)
 
-1. Above the list of staged changes, find the **Message** text box, but **don't enter anything** for now.
+1. Acima da lista de alterações staged, encontre a caixa de texto **Message**, mas **não digite nada** por enquanto.
 
-   - Typically, you would write a short description of the changes here, but now we have Copilot to help out!
+   - Normalmente, você escreveria uma breve descrição das mudanças aqui, mas agora temos o Copilot para ajudar!
 
-1. To the right of the **Message** text box, find and click the **Generate Commit Message with Copilot** button (sparkles icon).
+1. À direita da caixa **Message**, clique no botão **Generate Commit Message with Copilot** (ícone de brilhos).
 
-1. Press the **Commit** button and **Sync Changes** button to push your changes to GitHub.
+1. Pressione o botão **Commit** e depois **Sync Changes** para enviar suas alterações ao GitHub.
 
-1. Wait a moment for Mona to check your work, provide feedback, and share the next lesson.
+1. Aguarde um momento para a Mona conferir seu trabalho, dar feedback e compartilhar a próxima lição.
 
 <details>
-<summary>Having trouble? 🤷</summary><br/>
+<summary>Está com problemas? 🤷</summary><br/>
 
-If you don't get feedback, here are some things to check:
+Se não receber feedback, confira:
 
-- Make sure your pushed the `src/app.py` file changes to the branch `accelerate-with-copilot`.
+- Certifique-se de que enviou as alterações do arquivo `src/app.py` para a branch `accelerate-with-copilot`.
 
 </details>

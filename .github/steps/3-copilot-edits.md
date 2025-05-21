@@ -1,102 +1,102 @@
-## Step 3: Getting work done even _faster_ with Copilot Edits
+## Etapa 3: Trabalhando ainda _mais rápido_ com Copilot Edits
 
-In our previous steps, we used features of Copilot that require more hands-on guidance and they produced mostly localized results. Now, we will explore Copilot Edits, a feature that allows working more holistically on our repo.
+Nas etapas anteriores, usamos recursos do Copilot que exigem mais orientação manual e produzem resultados mais localizados. Agora, vamos explorar o Copilot Edits, um recurso que permite trabalhar de forma mais holística no nosso repositório.
 
-[Copilot - Edit Mode](https://code.visualstudio.com/docs/copilot/copilot-edits) is an AI-powered code editing session to make changes across **multiple files** using **natural language**, and applies the edits directly in the editor, where you can review them in-place, with the full context of the surrounding code.
+[Copilot - Modo Edição](https://code.visualstudio.com/docs/copilot/copilot-edits) é uma sessão de edição de código com IA para fazer alterações em **múltiplos arquivos** usando **linguagem natural**, aplicando as edições diretamente no editor, onde você pode revisá-las no contexto completo do código ao redor.
 
-#### Key features
+#### Principais recursos
 
-- **Multi-file Editing**: Copilot Edits can make changes across multiple files in your workspace.
-- **Iterative Workflow**: Designed for fast iteration, allowing you to review, accept, or discard AI-generated code.
-- **In-place Edits**: Shows generated code directly in your editor, providing a code review-like flow.
-- **Working Set**: Allows you to define which files the edits should be applied to.
+- **Edição em múltiplos arquivos**: O Copilot Edits pode fazer alterações em vários arquivos do seu workspace.
+- **Fluxo iterativo**: Projetado para iteração rápida, permitindo revisar, aceitar ou descartar o código gerado pela IA.
+- **Edição no local**: Mostra o código gerado diretamente no seu editor, proporcionando um fluxo semelhante a uma revisão de código.
+- **Conjunto de trabalho**: Permite definir em quais arquivos as edições devem ser aplicadas.
 
-#### How it works
+#### Como funciona
 
-1. **Set Context**: Select files to be in the working set.
-1. **Provide Instructions**: Use natural language to describe the required changes.
-1. **Review Changes**: See proposed changes in-place in your code.
-1. **Accept or Discard**: Review each suggested edit and choose which to keep.
-1. **Iterate**: If needed, provide follow-up instructions to refine the changes.
+1. **Defina o contexto**: Selecione os arquivos que farão parte do conjunto de trabalho.
+1. **Forneça instruções**: Use linguagem natural para descrever as mudanças necessárias.
+1. **Revise as alterações**: Veja as alterações propostas diretamente no seu código.
+1. **Aceite ou descarte**: Revise cada sugestão e escolha quais manter.
+1. **Itere**: Se necessário, forneça instruções adicionais para refinar as mudanças.
 
-### :keyboard: Activity: Use Copilot to add a new feature! :rocket:
+### :keyboard: Atividade: Use o Copilot para adicionar uma nova funcionalidade! :rocket:
 
-1. If the Copilot Chat panel is not visible, please reopen it.
+1. Se o painel do Copilot Chat não estiver visível, reabra-o.
 
-1. At the bottom of Copilot Chat window, use the dropdown to switch to **Edit** mode.
+1. Na parte inferior da janela do Copilot Chat, use o menu suspenso para trocar para o modo **Edição**.
 
    <img width="350" alt="image" src="https://github.com/user-attachments/assets/646fc94a-7d60-4821-b9cf-9ec6f4fd03d7" />
 
-1. Open the files related to our webpage then drag each editor window (or file) to the chat panel, informing Copilot to use them as context.
+1. Abra os arquivos relacionados à nossa página web e arraste cada janela do editor (ou arquivo) para o painel de chat, informando ao Copilot para usá-los como contexto.
 
    - `src/static/app.js`
    - `src/static/index.html`
    - `src/static/styles.css`
 
-   > **Tip:** You can also use the **Add Context...** button to provide other sources of context items, like a GitHub issue, the entire codebase, or the results of a terminal window.
+   > **Dica:** Você também pode usar o botão **Add Context...** para fornecer outros itens de contexto, como uma issue do GitHub, todo o codebase ou o resultado de um terminal.
 
-1. Ask Copilot to update our project to display the current participants of activities. Wait a moment for the edit suggestions to arrive and be applied.
+1. Peça ao Copilot para atualizar o projeto exibindo os participantes atuais das atividades. Aguarde um momento para as sugestões de edição aparecerem e serem aplicadas.
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
    > ```prompt
-   > Hey Copilot, can you please edit the activity cards to add a participants section.
-   > It will show what participants that are already signed up for that activity as a bulleted list.
-   > Remember to make it pretty!
+   > Olá Copilot, pode editar os cards de atividade para adicionar uma seção de participantes?
+   > Ela deve mostrar os participantes já inscritos naquela atividade como uma lista com marcadores.
+   > E lembre-se de deixar bonito!
    > ```
 
-   - An extra icon has appeared next to the file names and open editor windows indicating they have suggested edits.
-   - A suggested edits panel has appeared in the bottom right of the editor window providing controls to jump to the recommended changes.
+   - Um ícone extra aparecerá ao lado dos nomes dos arquivos e janelas abertas indicando que há sugestões de edição.
+   - Um painel de sugestões de edição aparecerá no canto inferior direito do editor, com controles para navegar pelas mudanças recomendadas.
 
-      <img width="200" alt="files with icons indicating they have been edited" src="https://github.com/user-attachments/assets/9c7c2e10-cd18-43c5-9947-cffd6dde0473" />
+      <img width="200" alt="arquivos com ícones indicando que foram editados" src="https://github.com/user-attachments/assets/9c7c2e10-cd18-43c5-9947-cffd6dde0473" />
 
-      <img width="250" alt="edit navigation panel" src="https://github.com/user-attachments/assets/a84965a5-2f43-4c93-a814-0fdeb3a06494" />
+      <img width="250" alt="painel de navegação de edições" src="https://github.com/user-attachments/assets/a84965a5-2f43-4c93-a814-0fdeb3a06494" />
 
    <details>
-   <summary>Need help? 🤷</summary><br/>
+   <summary>Precisa de ajuda? 🤷</summary><br/>
 
-   Remember, to add the relevant files to the working set.
+   Lembre-se de adicionar os arquivos relevantes ao conjunto de trabalho.
 
-   ![screenshot of working set](https://github.com/user-attachments/assets/d3eadc8e-583e-4a28-9e82-be128eab843b)
+   ![screenshot do conjunto de trabalho](https://github.com/user-attachments/assets/d3eadc8e-583e-4a28-9e82-be128eab843b)
 
    </details>
 
-1. Before we simply accept the changes, please check our website again and verify everything is updated as expected. Here is an example of an updated activity card. You may need to restart the app or refresh the page.
+1. Antes de simplesmente aceitar as mudanças, confira novamente o site e verifique se tudo foi atualizado como esperado. Aqui está um exemplo de card de atividade atualizado. Talvez seja necessário reiniciar o app ou atualizar a página.
 
-   <img width="350" alt="Activity card with participant info" src="https://github.com/user-attachments/assets/c4d56187-4791-4c8e-87d7-d5ce7cdc0bee" />
+   <img width="350" alt="Card de atividade com info de participantes" src="https://github.com/user-attachments/assets/c4d56187-4791-4c8e-87d7-d5ce7cdc0bee" />
 
-   > **Note:** Your activity card may look different. Copilot won't always produce the same results.
+   > **Nota:** Seu card pode estar diferente. O Copilot nem sempre gera o mesmo resultado.
 
    <details>
-   <summary>Need help? 🤷</summary><br/>
-   If the website is not loading, here are some things to check.
+   <summary>Precisa de ajuda? 🤷</summary><br/>
+   Se o site não carregar, confira:
 
-   - Restart the VS Code Debugger to make sure the latest version of the website is served.
-   - If you forgot the url, or closed the window, please review step 1.
-   - Try hard refreshing the webpage or opening in a private window so it downloads a fresh copy.
+   - Reinicie o depurador do VS Code para garantir que a versão mais recente do site está sendo servida.
+   - Se esqueceu a URL ou fechou a janela, revise o passo 1.
+   - Tente atualizar a página forçadamente ou abrir em uma janela anônima para baixar uma cópia nova.
 
    </details>
 
-1. Now that we have confirmed our changes are good, use the panel to cycle through each suggested edit and press **Keep** to apply the change.
+1. Agora que confirmamos que as mudanças estão corretas, use o painel para navegar por cada sugestão e pressione **Keep** para aplicar a alteração.
 
-   > **Tip:** You can accept the changes directly, modify them, or provide additional instruction to refine them using the chat interface.
+   > **Dica:** Você pode aceitar as mudanças diretamente, modificá-las ou fornecer instruções adicionais para refiná-las usando o chat.
 
-1. With our new feature complete, please **commit** and **push** the changes to GitHub.
+1. Com a nova funcionalidade pronta, faça o **commit** e **push** das alterações para o GitHub.
 
-1. Wait a moment for Mona to check your work, provide feedback, and share the final lesson. Almost done!
+1. Aguarde um momento para a Mona conferir seu trabalho, dar feedback e compartilhar a lição final. Quase lá!
 
-1. (optional) If you would like an ungraded bonus step to briefly introduce Agent mode, **add an issue comment** asking **@professortocat** about Copilot Agent mode. 🚀
+1. (opcional) Se quiser um passo bônus não avaliado para conhecer rapidamente o modo Agente, **adicione um comentário em uma issue** perguntando ao **@professortocat** sobre o modo Copilot Agent. 🚀
 
    ```txt
-   Hey @professortocat, Agent mode sounds pretty cool. Can you please tell me more about it?
+   Olá @professortocat, o modo Agent parece bem interessante. Pode me contar mais sobre ele?
    ```
 
 <details>
-<summary>Having trouble? 🤷</summary><br/>
+<summary>Está com problemas? 🤷</summary><br/>
 
-If you don't get feedback, here are some things to check:
+Se não receber feedback, confira:
 
-- Make sure your commit the changes in the `src/static/` directory to the branch `accelerate-with-copilot` and pushed/synchronized to GitHub.
-- If Mona found a mistake, simply make a correction and push your changes again. Mona will check your work as many times as needed.
+- Certifique-se de que fez commit das alterações no diretório `src/static/` para a branch `accelerate-with-copilot` e enviou/sincronizou para o GitHub.
+- Se a Mona encontrou algum erro, basta corrigir e enviar novamente. A Mona vai checar seu trabalho quantas vezes for preciso.
 
 </details>

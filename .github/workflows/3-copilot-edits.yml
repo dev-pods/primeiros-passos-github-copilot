@@ -74,9 +74,9 @@ jobs:
             step_number: 3
             passed: ${{ !contains(steps.*.outcome, 'failure') }}
             results_table:
-              - description: "Check app.js for participant info"
+              - description: "Verificar app.js para informações do participante"
                 passed: ${{ steps.check-app-js.outcome == 'success' }}
-              - description: "Participant styling updated in styles.css"
+              - description: "Estilo do participante atualizado em styles.css"
                 passed: ${{ steps.check-styles.outcome == 'success' }}
 
       - name: Create comment - step results

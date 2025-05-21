@@ -54,7 +54,7 @@ jobs:
           echo "PR description length: $body_length"
 
           if [ "$body_length" -lt $min_length ]; then
-            echo "::error::PR description is too short or missing"
+            echo "::error::A descrição do PR é muito curta ou não foi preenchida"
             exit 1
           fi
         env:
@@ -89,13 +89,13 @@ jobs:
             step_number: 4
             passed: ${{ !contains(steps.*.outcome, 'failure') }}
             results_table:
-              - description: "Pull request contains a descriptive overview"
+              - description: "O pull request contém uma descrição válida"
                 passed: ${{ steps.check-pr-description.outcome == 'success' }}
-              - description: "Pull request received a review from GitHub Copilot"
+              - description: "O pull request recebeu uma revisão do GitHub Copilot"
                 passed: ${{ steps.check-copilot-review.outcome == 'success' }}
             tips:
-              - "If you already requested Copilot review and this check did not pass, go to your repository [actions](https://github.com/${{github.repository}}/actions) tab to check if a workflow run is awaiting your manual approval."
-              - "You can use repository rulesets to automatically require a review from Copilot."
+              - "Se você já solicitou a revisão do Copilot e esta verificação não passou, vá para a aba [actions](https://github.com/${{github.repository}}/actions) do seu repositório para verificar se há uma execução de fluxo de trabalho aguardando sua aprovação manual."
+              - "Você pode usar rulesets do repositório para exigir automaticamente uma revisão do Copilot."
 
       - name: Create comment - step results
         run: |
