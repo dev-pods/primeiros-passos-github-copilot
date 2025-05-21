@@ -88,7 +88,7 @@ Nas etapas anteriores, usamos recursos do Copilot que exigem mais orientação m
 1. (opcional) Se quiser um passo bônus não avaliado para conhecer rapidamente o modo Agente, **adicione um comentário em uma issue** perguntando ao **@professortocat** sobre o modo Copilot Agent. 🚀
 
    ```txt
-   Olá @professortocat, o modo Agent parece bem interessante. Pode me contar mais sobre ele?
+   Olá @professortocat, o modo agente parece bem interessante. Pode me contar mais sobre ele?
    ```
 
 <details>

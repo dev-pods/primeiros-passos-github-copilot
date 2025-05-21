@@ -11,7 +11,7 @@ permissions:
 
 env:
   # Keywords required in the issue comment to allow this workflow to run
-  REQUIRED_ISSUE_COMMENT_KEYWORDS: "@professortocat,Agent"
+  REQUIRED_ISSUE_COMMENT_KEYWORDS: "Olá @professortocat, o modo agente"
   STEP_3B_FILE: ".github/steps/3b-copilot-agent-mode.md"
 
 jobs:
