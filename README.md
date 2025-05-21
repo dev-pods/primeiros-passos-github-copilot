@@ -23,7 +23,7 @@ Neste exercício, você irá:
 
 Simplesmente copie o exercício para sua conta, depois dê ao seu Octocat favorito (Mona) **cerca de 20 segundos** para preparar a primeira lição, então **atualize a página**.
 
-[![](https://img.shields.io/badge/Copiar%20Exerc%C3%ADcio-%E2%86%92-1f883d?style=for-the-badge&logo=github&labelColor=197935)](https://github.com/new?template_owner=dev-pods&template_name=primeiros-passos-github-copilot=%40me&name=primeiros-passos-github-copilot&description=Workshop+Invillia&visibility=public)
+[![](https://img.shields.io/badge/Copiar%20Exerc%C3%ADcio-%E2%86%92-1f883d?style=for-the-badge&logo=github&labelColor=197935)](https://github.com/new?template_name=primeiros-passos-github-copilot&template_owner=dev-pods&owner=%40me&description=Workshop+Invillia:+Primeiros+passos+com+GitHub+Copilot&name=primeiros-passos-github-copilot&visibility=public)
 
 <details>
 <summary>Tendo problemas? 🤷</summary><br/>
