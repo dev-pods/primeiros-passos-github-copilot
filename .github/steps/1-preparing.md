@@ -41,7 +41,7 @@ Vamos iniciar nosso ambiente de desenvolvimento, usar o Copilot para aprender um
 1. Confirme que o campo **Repository** é sua cópia do exercício, não o original, e depois clique no botão verde **Create Codespace**.
 
    - ✅ Sua cópia: `/{{{full_repo_name}}}`
-   - ❌ Original: `/skills/getting-started-with-github-copilot`
+   - ❌ Original: `/dev-pods/primeiros-passos-github-copilot`
 
 1. Aguarde um momento para que o Visual Studio Code carregue no seu navegador.
 

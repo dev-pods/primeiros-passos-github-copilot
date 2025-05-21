@@ -18,7 +18,7 @@ jobs:
     if: |
       !github.event.repository.is_template
     name: Start Exercise
-    uses: skills/exercise-toolkit/.github/workflows/start-exercise.yml@v0.4.0
+    uses: dev-pods/exercise-toolkit/.github/workflows/start-exercise.yml@v0.1.1
     with:
       exercise-title: "Primeiros Passos com o GitHub Copilot"
       intro-message: "Bem-vindo ao empolgante mundo do GitHub Copilot! 🚀 Neste exercício, você vai desbloquear o potencial deste assistente de codificação baseado em IA para acelerar seu processo de desenvolvimento. Vamos mergulhar e nos divertir explorando juntos o futuro da programação! 💻✨"
@@ -38,9 +38,9 @@ jobs:
       - name: Get response templates
         uses: actions/checkout@v4
         with:
-          repository: skills/exercise-toolkit
+          repository: dev-pods/exercise-toolkit
           path: exercise-toolkit
-          ref: v0.4.0
+          ref: v0.1.1
 
       - name: Build comment - add step content
         id: build-comment
