@@ -65,19 +65,19 @@ Resumidamente, você pode pensar no Copilot como um colega de trabalho muito esp
    ```python
    @app.post("/activities/{activity_name}/signup")
    def signup_for_activity(activity_name: str, email: str):
-      """Inscrever um estudante em uma atividade"""
-      # Validar se a atividade existe
+      """Sign up a student for an activity"""
+      # Validate activity exists
       if activity_name not in activities:
          raise HTTPException(status_code=404, detail="Activity not found")
 
-      # Obter a atividade
+      # Get the specificy activity
       activity = activities[activity_name]
 
       # Validar se o estudante já está inscrito
       if email in activity["participants"]:
-        raise HTTPException(status_code=400, detail="Student is already signed up")
-
-      # Adicionar estudante
+         raise HTTPException(status_code=400, detail="Already signed up")
+      
+      # Add student
       activity["participants"].append(email)
       return {"message": f"Signed up {email} for {activity_name}"}
    ```
@@ -114,63 +114,63 @@ O **Chat Inline** e o painel **Copilot Chat** são ferramentas muito parecidas, 
    O Copilot está evoluindo a cada dia e pode não produzir sempre os mesmos resultados. Se não gostar das sugestões, aqui está um exemplo que produzimos durante a criação deste exercício. Use se tiver dificuldades.
 
    ```python
-   # Banco de dados de atividades em memória
-   activities = {
-      "Clube de Xadrez": {
-         "description": "Aprenda estratégias e participe de torneios de xadrez",
-         "schedule": "Sextas, 15h30 - 17h",
-         "max_participants": 12,
-         "participants": ["michael@mergington.edu", "daniel@mergington.edu"]
-      },
-      "Aula de Programação": {
-         "description": "Aprenda fundamentos de programação e desenvolva projetos de software",
-         "schedule": "Terças e quintas, 15h30 - 16h30",
-         "max_participants": 20,
-         "participants": ["emma@mergington.edu", "sophia@mergington.edu"]
-      },
-      "Educação Física": {
-         "description": "Educação física e atividades esportivas",
-         "schedule": "Segundas, quartas e sextas, 14h - 15h",
-         "max_participants": 30,
-         "participants": ["john@mergington.edu", "olivia@mergington.edu"]
-      },
-      "Time de Basquete": {
-         "description": "Treinamento competitivo de basquete e jogos",
-         "schedule": "Terças e quintas, 16h - 18h",
-         "max_participants": 15,
-         "participants": []
-      },
-      "Clube de Natação": {
-         "description": "Treinamento de natação e esportes aquáticos",
-         "schedule": "Segundas e quartas, 15h30 - 17h",
-         "max_participants": 20,
-         "participants": []
-      },
-      "Estúdio de Arte": {
-         "description": "Expresse criatividade com pintura e desenho",
-         "schedule": "Quartas, 15h30 - 17h",
-         "max_participants": 15,
-         "participants": []
-      },
-      "Clube de Teatro": {
-         "description": "Teatro e treinamento de performance",
-         "schedule": "Terças, 16h - 18h",
-         "max_participants": 25,
-         "participants": []
-      },
-      "Equipe de Debate": {
-         "description": "Aprenda oratória e argumentação",
-         "schedule": "Quintas, 15h30 - 17h",
-         "max_participants": 16,
-         "participants": []
-      },
-      "Clube de Ciências": {
-         "description": "Experimentos práticos e exploração científica",
-         "schedule": "Sextas, 15h30 - 17h",
-         "max_participants": 20,
-         "participants": []
-      }
-   }
+    "Clube de Xadrez": {
+        "description": "Aprenda estratégias e participe de torneios de xadrez",
+        "schedule": "Sextas, 15h30 - 17h",
+        "max_participants": 12,
+        "participants": ["michael@mergington.edu", "daniel@mergington.edu"]
+    },
+    "Aula de Programação": {
+        "description": "Aprenda fundamentos de programação e desenvolva projetos de software",
+        "schedule": "Terças e quintas, 15h30 - 16h30",
+        "max_participants": 20,
+        "participants": ["emma@mergington.edu", "sophia@mergington.edu"]
+    },
+    "Educação Física": {
+        "description": "Educação física e atividades esportivas",
+        "schedule": "Segundas, quartas e sextas, 14h - 15h",
+        "max_participants": 30,
+        "participants": ["john@mergington.edu", "olivia@mergington.edu"]
+    },
+    # Esportivas
+    "Futebol": {
+        "description": "Participe do time de futebol da escola e jogue campeonatos",
+        "schedule": "Terças e quintas, 16h - 17h30",
+        "max_participants": 22,
+        "participants": ["lucas@mergington.edu", "marcos@mergington.edu"]
+    },
+    "Vôlei": {
+        "description": "Aulas e treinos de vôlei para todos os níveis",
+        "schedule": "Quartas e sextas, 15h - 16h30",
+        "max_participants": 18,
+        "participants": ["ana@mergington.edu", "carla@mergington.edu"]
+    },
+    # Artísticas
+    "Teatro": {
+        "description": "Oficina de teatro com apresentações semestrais",
+        "schedule": "Segundas e quartas, 16h - 17h30",
+        "max_participants": 15,
+        "participants": ["bruno@mergington.edu", "lara@mergington.edu"]
+    },
+    "Clube de Música": {
+        "description": "Aprenda instrumentos e participe da banda escolar",
+        "schedule": "Sextas, 14h - 15h30",
+        "max_participants": 12,
+        "participants": ["rafael@mergington.edu", "juliana@mergington.edu"]
+    },
+    # Intelectuais
+    "Olimpíada de Matemática": {
+        "description": "Prepare-se para olimpíadas de matemática com aulas e desafios",
+        "schedule": "Terças, 17h - 18h",
+        "max_participants": 25,
+        "participants": ["paulo@mergington.edu", "camila@mergington.edu"]
+    },
+    "Clube de Leitura": {
+        "description": "Leitura e discussão de livros clássicos e contemporâneos",
+        "schedule": "Quintas, 16h - 17h",
+        "max_participants": 20,
+        "participants": ["aline@mergington.edu", "fernando@mergington.edu"]
+    }
    ```
 
    </details>

@@ -21,24 +21,24 @@ app.mount("/static", StaticFiles(directory=os.path.join(Path(__file__).parent,
 
 # In-memory activity database
 activities = {
-    "Chess Club": {
-        "description": "Learn strategies and compete in chess tournaments",
-        "schedule": "Fridays, 3:30 PM - 5:00 PM",
-        "max_participants": 12,
-        "participants": ["michael@mergington.edu", "daniel@mergington.edu"]
-    },
-    "Programming Class": {
-        "description": "Learn programming fundamentals and build software projects",
-        "schedule": "Tuesdays and Thursdays, 3:30 PM - 4:30 PM",
-        "max_participants": 20,
-        "participants": ["emma@mergington.edu", "sophia@mergington.edu"]
-    },
-    "Gym Class": {
-        "description": "Physical education and sports activities",
-        "schedule": "Mondays, Wednesdays, Fridays, 2:00 PM - 3:00 PM",
-        "max_participants": 30,
-        "participants": ["john@mergington.edu", "olivia@mergington.edu"]
-    }
+   "Clube de Xadrez": {
+      "description": "Aprenda estratégias e participe de torneios de xadrez",
+      "schedule": "Sextas, 15h30 - 17h",
+      "max_participants": 12,
+      "participants": ["michael@mergington.edu", "daniel@mergington.edu"]
+   },
+   "Aula de Programação": {
+      "description": "Aprenda fundamentos de programação e desenvolva projetos de software",
+      "schedule": "Terças e quintas, 15h30 - 16h30",
+      "max_participants": 20,
+      "participants": ["emma@mergington.edu", "sophia@mergington.edu"]
+   },
+   "Educação Física": {
+      "description": "Educação física e atividades esportivas",
+      "schedule": "Segundas, quartas e sextas, 14h - 15h",
+      "max_participants": 30,
+      "participants": ["john@mergington.edu", "olivia@mergington.edu"]
+   }
 }
 
 
