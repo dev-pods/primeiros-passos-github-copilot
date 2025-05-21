@@ -71,7 +71,7 @@ Nas etapas anteriores, usamos recursos do Copilot que exigem mais orientação m
    <summary>Precisa de ajuda? 🤷</summary><br/>
    Se o site não carregar, confira:
 
-   - Reinicie o depurador do VS Code para garantir que a versão mais recente do site está sendo servida.
+   - Reinicie o depurador do VS Code para garantir que a versão mais recente do site está publicada.
    - Se esqueceu a URL ou fechou a janela, revise o passo 1.
    - Tente atualizar a página forçadamente ou abrir em uma janela anônima para baixar uma cópia nova.
 
